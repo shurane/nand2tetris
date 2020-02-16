@@ -18,4 +18,9 @@ CHIP Xor {
     And(a=a, b=w2, out=w3);
     And(a=w1, b=b, out=w4);
     Or(a=w3, b=w4, out=out);
+
+    // alternative approach using only 3 gates, discovered with Farhan
+    // Or(a=a, b=b, out=w1);
+    // Nand(a=a, b=b, out=w2);
+    // And(a=w1, b=w2, out=out);
 }
